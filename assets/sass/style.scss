@@ -1,0 +1,223 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+body:not(.wp-admin) {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+
+    * {
+        box-sizing: border-box;
+    }
+}
+
+label {
+    font-size: var(--wp--preset--font-size--small, 1.125rem);
+}
+
+del {
+    color: var(--wp--preset--color--muted, #6c757d);
+}
+
+// Input styles.
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+textarea,
+select {
+    border: 2px solid var(--wp--preset--color--contrast, #212529);
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f7f7f7;
+    color: var(--wp--preset--color--contrast, #212529);
+    transition: border-color 0.15s ease-in-out;
+    line-height: 2;
+    min-height: 30px;
+    max-width: 100%;
+
+    &:hover,
+    &:focus {
+        border-color: var(--wp--preset--color--primary, #6001ee);
+        outline: 0;
+    }
+}
+
+// Checkbox and radio.
+input[type="checkbox"],
+input[type="radio"] {
+
+    // Hide the default checkbox.
+    display: none;
+
+    // Create a custom radio style.
+    & + span,
+    & + label {
+        position: relative;
+        display: inline-block;
+
+        // Create a custom checkbox style.
+        &::before {
+            content: "";
+            display: inline-block;
+            margin-right: 10px;
+            width: 18px;
+            height: 18px;
+            border: 2px solid var(--wp--preset--color--contrast, #212529);
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+    }
+
+    &:checked + span,
+    &:checked + label {
+
+        &::before {
+            background-color: var(--wp--preset--color--primary, #6001ee);
+            border-color: transparent;
+        }
+
+        &::after {
+            content: "\2713"; // Unicode checkmark character.
+            font-size: calc(var(--wp--preset--font-size--small, 1.125rem)/1.5);
+            font-weight: 900;
+            position: absolute;
+            top: 2px;
+            left: 5px;
+            color: var(--wp--preset--color--white, #fff);
+        }
+    }
+}
+
+// Radio.
+input[type="radio"] {
+
+    // Create a custom radio style.
+    & + span::before,
+    & + label::before {
+        border-radius: 100%;
+    }
+}
+
+// Flat button
+.is-style-hizzle-flat-button .wp-block-button__link {
+    &,
+    &:active,
+    &:focus,
+    &:hover,
+    &:visited {
+        box-shadow: none;
+        border-radius: 0;
+        border: none;
+        margin-top: initial;
+        margin-bottom: initial;
+    }
+}
+
+// Menu button style
+.is-style-hizzle-navigation-button button.wp-block-navigation__responsive-container-close,
+.is-style-hizzle-navigation-button button.wp-block-navigation__responsive-container-open {
+	font-size: var(--wp--preset--font-size--small);
+	font-family: var(--wp--preset--font-family--system);
+	line-height: 1.7;
+	padding: 0;
+	border: 2px solid transparent;
+	border-radius: 4px;
+	background: var(--wp--preset--color--primary);
+	color: var(--wp--preset--color--contrast);
+	box-shadow: var(--wp--preset--shadow--natural);
+}
+
+.is-style-hizzle-navigation-button button.wp-block-navigation__responsive-container-close:hover,
+.is-style-hizzle-navigation-button button.wp-block-navigation__responsive-container-open:hover,
+.is-style-hizzle-navigation-button button.wp-block-navigation__responsive-container-close:focus,
+.is-style-hizzle-navigation-button button.wp-block-navigation__responsive-container-open:focus {
+	color: var(--wp--preset--color--contrast);
+	box-shadow: var(--wp--preset--shadow--natural);
+	border: 2px solid var(--wp--preset--color--secondary);
+}
+
+/* Box shadow */
+.is-style-hizzle-box-shadow {
+	box-shadow: var(--wp--preset--shadow--natural);
+}
+
+/* Underlined Lists */
+.is-style-hizzle-list-underline {
+    border-bottom: 1px solid var(--wp--preset--color--light);
+}
+
+// Styled lists.
+.is-style-hizzle-list-checkmark,
+.is-style-hizzle-list-arrow,
+.is-style-hizzle-list-crossed {
+
+    list-style-type: none;
+    position: relative;
+
+    &::before {
+        content: "\2713"; // Unicode checkmark character.
+        font-size: var(--wp--preset--font-size--medium, 1.125rem);
+        font-weight: 900;
+        position: absolute;
+        top: 0;
+        left: -30px;
+        color: var(--wp--preset--color--primary, #6001ee);
+    }
+}
+
+/* Arrow Lists */
+.is-style-hizzle-list-arrow::before {
+    content: "\2192"; // Unicode right arrow character.
+    color: var(--wp--preset--color--muted);
+}
+
+/* Crossed Lists */
+.is-style-hizzle-list-crossed::before {
+    content: "\2717"; // Unicode cross character.
+    color: var(--wp--preset--color--vivid-red);
+}
+
+// Bottom SVG separator for blocks.
+.is-style-hizzle-svg-separator-bottom {
+    overflow:hidden;
+    position:relative;
+    padding-bottom: 50px;
+
+    &::before{ 
+        content: "";
+        position: absolute;
+        z-index: 3;
+        pointer-events: none;
+        background-repeat: no-repeat;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        display: block;
+        height: 50px;
+        transform: rotate(180deg);
+        background-image: url('data:image/svg+xml,<svg fill="%23ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"> <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path> </svg>');
+
+        @media (min-width:2100px) {
+            background-size: calc(100vw + 100px);
+        }
+    }
+}
