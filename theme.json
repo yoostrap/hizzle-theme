@@ -63,6 +63,16 @@
 					"name": "Midnight"
 				},
 				{
+					"slug": "hg-midnight-right",
+					"gradient": "linear-gradient(to right, #ffffff 80%,#302b63 80.1%,#0f0c29 100%)",
+					"name": "Midnight Right"
+				},
+				{
+					"slug": "hg-midnight-left",
+					"gradient": "linear-gradient(to left, #ffffff 80%,#302b63 80.1%,#0f0c29 100%)",
+					"name": "Midnight Left"
+				},
+				{
 					"slug": "hg-moonrise",
 					"gradient": "linear-gradient(to bottom right, #ff512f, #ff2476)",
 					"name": "Moonrise"
@@ -102,7 +112,7 @@
 				{
 					"name": "Natural",
 					"slug": "natural",
-					"shadow": "0 1px 2px rgba(0,0,0,0.15)"
+					"shadow": " 0 0 .19rem 1px rgba(0,0,0,.125)"
 				},
 				{
 					"name": "Crisp",
@@ -308,6 +318,15 @@
 			"core/site-title": {
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--medium)"
+				}
+			},
+			"core/button": {
+				"variations": {
+					"outline": {
+						"border": {
+							"color": "var(--wp--preset--color--secondary)"
+						}
+					}
 				}
 			}
 		},

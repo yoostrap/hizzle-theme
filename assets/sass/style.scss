@@ -171,15 +171,16 @@ input[type="radio"] {
 
     list-style-type: none;
     position: relative;
+    margin-bottom: 1rem;
 
     &::before {
         content: "\2713"; // Unicode checkmark character.
-        font-size: var(--wp--preset--font-size--medium, 1.125rem);
+        font-size: var(--wp--preset--font-size--small, 1.125rem);
         font-weight: 900;
         position: absolute;
         top: 0;
         left: -30px;
-        color: var(--wp--preset--color--primary, #6001ee);
+        color: var(--wp--preset--color--secondary);
     }
 }
 
@@ -219,5 +220,47 @@ input[type="radio"] {
         @media (min-width:2100px) {
             background-size: calc(100vw + 100px);
         }
+    }
+}
+
+// Shadows.
+.has-shadow--natural {
+    box-shadow: var(--wp--preset--shadow--natural);
+}
+
+.has-shadow--crisp {
+    box-shadow: var(--wp--preset--shadow--crisp);
+}
+
+.has-shadow--sharp {
+    box-shadow: var(--wp--preset--shadow--sharp);
+}
+
+.has-shadow--deep {
+    box-shadow: var(--wp--preset--shadow--deep);
+}
+
+// Border radius.
+.has-border-radius--small {
+    border-radius: 4px;
+}
+
+.has-border-radius--medium {
+    border-radius: 8px;
+}
+
+.has-border-radius--large {
+    border-radius: 16px;
+}
+
+.has-border-radius--full {
+    border-radius: 9999px;
+}
+
+// Remove half gradients on mobile.
+@media (max-width: 779px) {
+    .has-hg-midnight-right-gradient-background.has-background,
+    .has-hg-midnight-left-gradient-background.has-background {
+        background: none !important;
     }
 }

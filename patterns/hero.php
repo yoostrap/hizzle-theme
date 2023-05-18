@@ -22,7 +22,7 @@
 			</div>
 			<!-- /wp:group -->
 
-			<!-- wp:navigation {"ref":2273} /-->
+			<!-- wp:navigation /-->
 		</div>
 		<!-- /wp:group -->
 	</div>
