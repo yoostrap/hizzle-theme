@@ -3,4 +3,8 @@
   fill: currentcolor;
 }
 
+.wp-block-button.is-style-outline > .wp-block-button__link:not(.has-text-color):hover {
+  color: var(--wp--preset--color--secondary);
+}
+
 /*# sourceMappingURL=button-block.css.map */

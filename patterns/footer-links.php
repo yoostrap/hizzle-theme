@@ -3,7 +3,6 @@
  * Title: Footer links
  * Slug: hizzle/footer-links
  * Categories: text
- * Inserter: no
  *
  * @package hizzle
  * @since 1.0.0

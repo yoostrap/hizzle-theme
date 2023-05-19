@@ -9,8 +9,9 @@
  */
 
 ?>
-<!-- wp:group {"align":"full","style":{"spacing":{"margin":{"top":"0px","bottom":"0px"},"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}},"border":{"top":{"color":"#080173","width":"2px"}}},"gradient":"hg-midnight-left","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-hg-midnight-left-gradient-background has-background" style="border-top-color:#080173;border-top-width:2px;margin-top:0px;margin-bottom:0px;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:group {"align":"wide","style":{"dimensions":{"minHeight":"95vh"},"spacing":{"margin":{"top":"0"}}},"className":"is-style-default","layout":{"type":"flex","orientation":"vertical","justifyContent":"center","verticalAlignment":"center"}} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"margin":{"top":"0px","bottom":"0px"},"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}},"border":{"top":{"color":"#080173","width":"2px"}}},"textColor":"contrast","gradient":"hg-midnight-left","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-contrast-color has-hg-midnight-left-gradient-background has-text-color has-background" style="border-top-color:#080173;border-top-width:2px;margin-top:0px;margin-bottom:0px;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)">
+	<!-- wp:group {"align":"wide","style":{"dimensions":{"minHeight":"95vh"},"spacing":{"margin":{"top":"0"}}},"className":"is-style-default","layout":{"type":"flex","orientation":"vertical","justifyContent":"center","verticalAlignment":"center"}} -->
 	<div class="wp-block-group alignwide is-style-default" style="min-height:95vh;margin-top:0"><!-- wp:columns {"align":"wide","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}},"border":{"width":"0px","style":"none"},"typography":{"fontSize":"15px"}}} -->
 		<div class="wp-block-columns alignwide" style="border-style:none;border-width:0px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;font-size:15px"><!-- wp:column {"verticalAlignment":"center"} -->
 			<div class="wp-block-column is-vertically-aligned-center"><!-- wp:spacer {"height":"75px"} -->
