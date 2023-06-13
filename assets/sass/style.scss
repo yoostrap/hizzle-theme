@@ -264,3 +264,39 @@ input[type="radio"] {
         background: none !important;
     }
 }
+
+// Overlapping featured images.
+@media (min-width: 720px) {
+    .is-overlapping-featured-image__container {
+        overflow: hidden;
+        margin-top: -20px;
+    }
+
+    .is-overlapping-featured-image {
+        position: relative;
+        margin: 0 auto;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: -100vw;
+            right: -100vw;
+            bottom: 0;
+            height: 50%;
+            background-color: var(--wp--preset--color--base);
+        }
+
+        img {
+            position: relative;
+            z-index: 10;
+        }
+    }
+}
+
+// Separate items with a |.
+.separate-children__with-pipe > *:not(:first-child)::before {
+    content: "|";
+    display: inline-block;
+    font-weight: 400;
+    margin: 0 0.5rem;
+}
