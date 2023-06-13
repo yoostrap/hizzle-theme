@@ -161,50 +161,59 @@
 			"fontSizes": [
 				{
 					"slug": "extra-small",
-					"size": "1rem",
+					"size": "0.8rem",
 					"name": "Extra small",
 					"fluid": false
 				},
 				{
 					"slug": "small",
-					"size": "1.125rem",
+					"size": "1rem",
 					"name": "Small",
 					"fluid": false
 				},
 				{
 					"slug": "medium",
-					"size": "1.25rem",
+					"size": "1.125rem",
 					"name": "Medium",
 					"fluid": {
-						"min": "1.25rem",
-						"max": "1.5rem"
+						"min": "1.125rem",
+						"max": "1.25rem"
 					}
 				},
 				{
 					"slug": "large",
-					"size": "2rem",
+					"size": "1.5rem",
 					"name": "Large",
 					"fluid": {
-						"min": "1.75rem",
-						"max": "2rem"
+						"min": "1.5rem",
+						"max": "1.75rem"
 					}
 				},
 				{
 					"slug": "x-large",
-					"size": "2.75rem",
+					"size": "2rem",
 					"name": "XL",
 					"fluid": {
-						"min": "2.5rem",
-						"max": "2.75rem"
+						"min": "2rem",
+						"max": "2.5rem"
 					}
 				},
 				{
 					"slug": "xx-large",
-					"size": "3.75rem",
+					"size": "2.75rem",
 					"name": "XXL",
 					"fluid": {
+						"min": "2.75rem",
+						"max": "3rem"
+					}
+				},
+				{
+					"slug": "xxx-large",
+					"size": "3.5rem",
+					"name": "XXXL",
+					"fluid": {
 						"min": "3rem",
-						"max": "3.75rem"
+						"max": "3.5rem"
 					}
 				}
 			]
@@ -257,7 +266,7 @@
 			},
 			"core/post-author": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--extra-small)"
+					"fontSize": "var(--wp--preset--font-size--small)"
 				},
 				"color": {
 					"text": "var(--wp--preset--color--muted)"
@@ -272,7 +281,7 @@
 			},
 			"core/post-date": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--extra-small)"
+					"fontSize": "var(--wp--preset--font-size--small)"
 				},
 				"color": {
 					"text": "var(--wp--preset--color--muted)"
@@ -287,7 +296,7 @@
 			},
 			"core/post-terms": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--extra-small)"
+					"fontSize": "var(--wp--preset--font-size--small)"
 				},
 				"color": {
 					"text": "var(--wp--preset--color--muted)"

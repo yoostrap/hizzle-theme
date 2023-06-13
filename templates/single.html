@@ -4,8 +4,8 @@
 <main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)">
 
 	<!-- wp:post-title /-->
-	<!-- wp:group {"layout":{"type":"flex","allowOrientation":false},"fontSize":"extra-small"} -->
-	<div class="wp-block-group has-extra-small-font-size">
+	<!-- wp:group {"layout":{"type":"flex","allowOrientation":false},"fontSize":"small"} -->
+	<div class="wp-block-group has-small-font-size">
 		<!-- wp:post-author {"showBio":false,"byline":"by","textColor":"muted"} /-->
 		<!-- wp:paragraph {"textColor":"muted","fontSize":"medium"} -->
 		<p class="has-contrast-color has-text-color has-medium-font-size">|</p>
@@ -26,14 +26,8 @@
 	<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
 	<!-- /wp:spacer -->
 
-	<!-- wp:group {"layout":{"type":"flex","allowOrientation":false}} -->
-	<div class="wp-block-group">
-		<!-- wp:post-author {"showAvatar":false} /-->
-		<!-- wp:post-date /-->
-		<!-- wp:post-terms {"term":"category"} /-->
-		<!-- wp:post-terms {"term":"post_tag"} /-->
-	</div>
-	<!-- /wp:group -->
+	<!-- wp:post-terms {"term":"category"} /-->
+	<!-- wp:post-terms {"term":"post_tag"} /-->
 
 	<!-- wp:separator -->
 	<hr class="wp-block-separator has-alpha-channel-opacity"/>
@@ -41,14 +35,10 @@
 
 	<!-- wp:template-part {"slug":"comments"} /-->
 
-	<!-- wp:spacer {"height":"40px"} -->
-	<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
-	<!-- /wp:spacer -->
-
-	<!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"}} -->
-	<div class="wp-block-group">
-		<!-- wp:post-navigation-link {"type":"previous","showTitle":true,"linkLabel":true,"arrow":"arrow"} /-->
-		<!-- wp:post-navigation-link {"showTitle":true,"linkLabel":true,"arrow":"arrow"} /-->
+	<!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"},"fontSize":"small"} -->
+	<div class="wp-block-group has-small-font-size">
+		<!-- wp:post-navigation-link {"type":"previous","showTitle":true,"linkLabel":true,"arrow":"chevron"} /-->
+		<!-- wp:post-navigation-link {"showTitle":true,"linkLabel":true,"arrow":"chevron"} /-->
 	</div>
 	<!-- /wp:group -->
 

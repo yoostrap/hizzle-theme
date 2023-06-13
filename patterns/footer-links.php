@@ -9,10 +9,11 @@
  */
 
 ?>
-<!-- wp:group {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|cyan-bluish-gray"}}},"spacing":{"padding":{"top":"var:preset|spacing|40","right":"var:preset|spacing|30","bottom":"var:preset|spacing|40","left":"var:preset|spacing|30"}}},"gradient":"hg-lawrencium","textColor":"base","layout":{"type":"flex","justifyContent":"space-between"},"fontSize":"extra-small"} -->
-<div class="wp-block-group alignfull has-base-color has-contrast-background-color has-text-color has-background has-link-color has-extra-small-font-size" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--30)">
+<!-- wp:group {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|cyan-bluish-gray"}}},"spacing":{"padding":{"top":"var:preset|spacing|40","right":"var:preset|spacing|30","bottom":"var:preset|spacing|40","left":"var:preset|spacing|30"}}},"textColor":"base","gradient":"hg-lawrencium","className":"has-contrast-background-color","layout":{"type":"flex","justifyContent":"space-between"},"fontSize":"small"} -->
+<div class="wp-block-group alignfull has-contrast-background-color has-base-color has-hg-lawrencium-gradient-background has-text-color has-background has-link-color has-small-font-size" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--30)">
+
 	<!-- wp:paragraph -->
-	<p class="has-extra-small-font-size">
+	<p class="has-small-font-size">
 		<?php
 		printf(
 			/* translators: %s: Copyright year, %2 is site title. */
