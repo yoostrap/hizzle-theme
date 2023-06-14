@@ -395,11 +395,6 @@
 			"name": "footer",
 			"title": "Footer",
 			"area": "footer"
-		},
-		{
-			"name": "sidebar",
-			"title": "Sidebar",
-			"area": "uncategorized"
 		}
 	],
 	"customTemplates": [
@@ -407,16 +402,6 @@
 			"name": "no-title",
 			"title": "No title",
 			"postTypes": [ "post","page" ]
-		},
-		{
-			"name": "sidebar-page-template",
-			"title": "Page with sidebar",
-			"postTypes": [ "page" ]
-		},
-		{
-			"name": "sidebar-post-template",
-			"title": "Post with sidebar",
-			"postTypes": [ "post" ]
 		},
 		{
 			"name": "single-product",
