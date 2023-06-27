@@ -3,13 +3,23 @@
 <!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"0px","bottom":"0px"}}},"layout":{"type":"constrained"}} -->
 <main class="wp-block-group" style="margin-top:0px;margin-bottom:0px">
 
-	<!-- wp:group {"tagName":"header","align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"backgroundColor":"secondary","textColor":"base","layout":{"type":"constrained"}} -->
-<header class="wp-block-group alignfull has-base-color has-secondary-background-color has-text-color has-background has-link-color"><!-- wp:hizzle/breadcrumbs {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"fontSize":"small"} /-->
+	<!-- wp:group {"tagName":"header","align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"textColor":"base","gradient":"hg-lawrencium","layout":{"type":"constrained"}} -->
+	<header class="wp-block-group alignfull has-base-color has-hg-lawrencium-gradient-background has-text-color has-background has-link-color">
 
 	<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}},"layout":{"type":"constrained"}} -->
-	<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)"><!-- wp:post-title {"textAlign":"center"} /-->
+	<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)">
+		<!-- wp:post-title {"textAlign":"center"} /-->
 	
-	<!-- wp:search {"label":"Search","buttonText":"Search"} /--></div>
+	<!-- wp:group {"style":{"spacing":{"blockGap":"0px"}},"className":"separate-children__with-pipe","layout":{"type":"flex","allowOrientation":false,"justifyContent":"center"},"fontSize":"small"} -->
+	<div class="wp-block-group separate-children__with-pipe has-small-font-size">
+		<!-- wp:post-author {"showBio":false,"byline":"","isLink":true} /-->
+
+		<!-- wp:post-date {"displayType":"modified"} /-->
+
+		<!-- wp:post-terms {"term":"category"} /-->
+	</div>
+	<!-- /wp:group -->
+</div>
 	<!-- /wp:group -->
 	
 	<!-- wp:group {"align":"full","className":"is-overlapping-featured-image__container","layout":{"type":"constrained"}} -->
