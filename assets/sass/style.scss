@@ -1,29 +1,38 @@
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
 
-    html {
-        scroll-behavior: auto;
-    }
+	html {
+		scroll-behavior: auto;
+	}
 }
 
 body:not(.wp-admin) {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
 
-    * {
-        box-sizing: border-box;
-    }
+	* {
+		box-sizing: border-box;
+	}
+}
+
+.wp-site-blocks > .entry-content.alignfull {
+    margin-block-start: 0;
+}
+
+.has-global-padding > .alignfull > .alignwide {
+    padding-right: var(--wp--style--root--padding-right);
+    padding-left: var(--wp--style--root--padding-left);
 }
 
 label {
-    font-size: var(--wp--preset--font-size--small, 1.125rem);
+	font-size: var(--wp--preset--font-size--small, 1.125rem);
 }
 
 del {
-    color: var(--wp--preset--color--muted, #6c757d);
+	color: var(--wp--preset--color--muted, #6c757d);
 }
 
 // Input styles.
@@ -42,93 +51,93 @@ input[type="url"],
 input[type="week"],
 textarea,
 select {
-    border: 2px solid var(--wp--preset--color--contrast, #212529);
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #f7f7f7;
-    color: var(--wp--preset--color--contrast, #212529);
-    transition: border-color 0.15s ease-in-out;
-    line-height: 2;
-    min-height: 30px;
-    max-width: 100%;
+	border: 2px solid var(--wp--preset--color--contrast, #212529);
+	border-radius: 5px;
+	padding: 10px;
+	background-color: #f7f7f7;
+	color: var(--wp--preset--color--contrast, #212529);
+	transition: border-color 0.15s ease-in-out;
+	line-height: 2;
+	min-height: 30px;
+	max-width: 100%;
 
-    &:hover,
-    &:focus {
-        border-color: var(--wp--preset--color--primary, #6001ee);
-        outline: 0;
-    }
+	&:hover,
+	&:focus {
+		border-color: var(--wp--preset--color--primary, #6001ee);
+		outline: 0;
+	}
 }
 
 // Checkbox and radio.
 input[type="checkbox"],
 input[type="radio"] {
 
-    // Hide the default checkbox.
-    display: none;
+	// Hide the default checkbox.
+	display: none;
 
-    // Create a custom radio style.
-    & + span,
-    & + label {
-        position: relative;
-        display: inline-block;
+	// Create a custom radio style.
+	& + span,
+	& + label {
+		position: relative;
+		display: inline-block;
 
-        // Create a custom checkbox style.
-        &::before {
-            content: "";
-            display: inline-block;
-            margin-right: 10px;
-            width: 18px;
-            height: 18px;
-            border: 2px solid var(--wp--preset--color--contrast, #212529);
-            border-radius: 3px;
-            cursor: pointer;
-            font-size: 14px;
-        }
-    }
+		// Create a custom checkbox style.
+		&::before {
+			content: "";
+			display: inline-block;
+			margin-right: 10px;
+			width: 18px;
+			height: 18px;
+			border: 2px solid var(--wp--preset--color--contrast, #212529);
+			border-radius: 3px;
+			cursor: pointer;
+			font-size: 14px;
+		}
+	}
 
-    &:checked + span,
-    &:checked + label {
+	&:checked + span,
+	&:checked + label {
 
-        &::before {
-            background-color: var(--wp--preset--color--primary, #6001ee);
-            border-color: transparent;
-        }
+		&::before {
+			background-color: var(--wp--preset--color--primary, #6001ee);
+			border-color: transparent;
+		}
 
-        &::after {
-            content: "\2713"; // Unicode checkmark character.
-            font-size: calc(var(--wp--preset--font-size--small, 1.125rem)/1.5);
-            font-weight: 900;
-            position: absolute;
-            top: 2px;
-            left: 5px;
-            color: var(--wp--preset--color--white, #fff);
-        }
-    }
+		&::after {
+			content: "\2713"; // Unicode checkmark character.
+			font-size: calc(var(--wp--preset--font-size--small, 1.125rem)/1.5);
+			font-weight: 900;
+			position: absolute;
+			top: 2px;
+			left: 5px;
+			color: var(--wp--preset--color--white, #fff);
+		}
+	}
 }
 
 // Radio.
 input[type="radio"] {
 
-    // Create a custom radio style.
-    & + span::before,
-    & + label::before {
-        border-radius: 100%;
-    }
+	// Create a custom radio style.
+	& + span::before,
+	& + label::before {
+		border-radius: 100%;
+	}
 }
 
 // Flat button
 .is-style-hizzle-flat-button .wp-block-button__link {
-    &,
-    &:active,
-    &:focus,
-    &:hover,
-    &:visited {
-        box-shadow: none;
-        border-radius: 0;
-        border: none;
-        margin-top: initial;
-        margin-bottom: initial;
-    }
+	&,
+	&:active,
+	&:focus,
+	&:hover,
+	&:visited {
+		box-shadow: none;
+		border-radius: 0;
+		border: none;
+		margin-top: initial;
+		margin-bottom: initial;
+	}
 }
 
 // Menu button style
@@ -161,7 +170,7 @@ input[type="radio"] {
 
 /* Underlined Lists */
 .is-style-hizzle-list-underline {
-    border-bottom: 1px solid var(--wp--preset--color--light);
+	border-bottom: 1px solid var(--wp--preset--color--light);
 }
 
 // Styled lists.
@@ -169,139 +178,223 @@ input[type="radio"] {
 .is-style-hizzle-list-arrow,
 .is-style-hizzle-list-crossed {
 
-    list-style-type: none;
-    position: relative;
-    margin-bottom: 1rem;
+	list-style-type: none;
+	position: relative;
+	margin-bottom: 1rem;
 
-    &::before {
-        content: "\2713"; // Unicode checkmark character.
-        font-size: var(--wp--preset--font-size--small, 1.125rem);
-        font-weight: 900;
-        position: absolute;
-        top: 0;
-        left: -30px;
-        color: var(--wp--preset--color--secondary);
-    }
+	&::before {
+		content: "\2713"; // Unicode checkmark character.
+		font-size: var(--wp--preset--font-size--medium, 1.125rem);
+		font-weight: 900;
+		position: absolute;
+		top: -4px;
+		left: -30px;
+		color: var(--wp--preset--color--vivid-green-cyan);
+	}
 }
 
 /* Arrow Lists */
 .is-style-hizzle-list-arrow::before {
-    content: "\2192"; // Unicode right arrow character.
-    color: var(--wp--preset--color--muted);
+	content: "\2192"; // Unicode right arrow character.
+	color: var(--wp--preset--color--muted);
 }
 
 /* Crossed Lists */
 .is-style-hizzle-list-crossed::before {
-    content: "\2717"; // Unicode cross character.
-    color: var(--wp--preset--color--vivid-red);
+	content: "\2717"; // Unicode cross character.
+	color: var(--wp--preset--color--vivid-red);
+}
+
+/* Button links */
+.is-style-hizzle-navigation-link-button {
+	color: var(--wp--preset--color--white);
+
+	a {
+		background-color: var(--wp--preset--color--primary);
+		border-radius: 4px;
+		color: var(--wp--preset--color--white);
+		font-size: var(--wp--preset--font-size--small);
+		font-weight: 700;
+		line-height: inherit;
+		padding: calc(0.667em + 2px) calc(1.333em + 2px);
+		text-decoration: none;
+		box-shadow: var(--wp--preset--shadow--natural);
+
+		.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content & {
+			padding: calc(0.667em + 2px) calc(1.333em + 2px);
+			color: var(--wp--preset--color--white);
+		}
+
+		&:hover,
+		&:focus {
+			background-color: var(--wp--preset--color--secondary);
+			color: var(--wp--preset--color--white);
+			text-decoration: none;
+		}
+	}
+}
+
+/* Cards */
+.is-style-hizzle-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 0.25rem;
+}
+
+.card__icon {
+    border-radius: 8px;
+    height: 64px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    width: 64px;
+    -o-object-fit: contain;
+    object-fit: contain;
 }
 
 // Bottom SVG separator for blocks.
 .is-style-hizzle-svg-separator-bottom {
-    overflow:hidden;
-    position:relative;
-    padding-bottom: 50px;
+	overflow:hidden;
+	position:relative;
+	padding-bottom: 50px;
 
-    &::before{ 
-        content: "";
-        position: absolute;
-        z-index: 3;
-        pointer-events: none;
-        background-repeat: no-repeat;
-        bottom: -1px;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        display: block;
-        height: 50px;
-        transform: rotate(180deg);
-        background-image: url('data:image/svg+xml,<svg fill="%23ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"> <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path> </svg>');
+	&::before{ 
+		content: "";
+		position: absolute;
+		z-index: 3;
+		pointer-events: none;
+		background-repeat: no-repeat;
+		bottom: -1px;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		display: block;
+		height: 50px;
+		transform: rotate(180deg);
+		background-image: url('data:image/svg+xml,<svg fill="%23ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"> <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path> </svg>');
 
-        @media (min-width:2100px) {
-            background-size: calc(100vw + 100px);
-        }
-    }
+		@media (min-width:2100px) {
+			background-size: calc(100vw + 100px);
+		}
+	}
 }
 
 // Shadows.
 .has-shadow--natural {
-    box-shadow: var(--wp--preset--shadow--natural);
+	box-shadow: var(--wp--preset--shadow--natural);
 }
 
 .has-shadow--crisp {
-    box-shadow: var(--wp--preset--shadow--crisp);
+	box-shadow: var(--wp--preset--shadow--crisp);
 }
 
 .has-shadow--sharp {
-    box-shadow: var(--wp--preset--shadow--sharp);
+	box-shadow: var(--wp--preset--shadow--sharp);
 }
 
 .has-shadow--deep {
-    box-shadow: var(--wp--preset--shadow--deep);
+	box-shadow: var(--wp--preset--shadow--deep);
 }
 
 // Border radius.
 .has-border-radius--small {
-    border-radius: 4px;
+	border-radius: 4px;
 }
 
 .has-border-radius--medium {
-    border-radius: 8px;
+	border-radius: 8px;
 }
 
 .has-border-radius--large {
-    border-radius: 16px;
+	border-radius: 16px;
 }
 
 .has-border-radius--full {
-    border-radius: 9999px;
+	border-radius: 9999px;
 }
 
 // Remove half gradients on mobile.
 @media (max-width: 779px) {
-    .has-hg-midnight-right-gradient-background.has-background,
-    .has-hg-midnight-left-gradient-background.has-background {
-        background: none !important;
-    }
+	.has-hg-midnight-right-gradient-background.has-background,
+	.has-hg-midnight-left-gradient-background.has-background {
+		background: none !important;
+	}
+}
+
+// Border.
+.has-border {
+	border: 1px solid var(--wp--preset--color--light);
+}
+
+.has-hoverable-border {
+	transition: border-color 0.2s ease-in-out;
+
+	&:hover,
+	&:focus {
+		border-color: var(--wp--preset--color--muted);
+	}
+}
+
+// Margin.
+.has-margin__top {
+	margin-top: 1em;
+}
+
+.has-margin__bottom {
+	margin-bottom: 1em;
+}
+
+// Padding.
+.has-padding {
+	padding: 1em;
 }
 
 // Overlapping featured images.
 @media (min-width: 720px) {
-    .is-overlapping-featured-image__container {
-        overflow: hidden;
-        margin-top: -20px;
-    }
+	.is-overlapping-featured-image__container {
+		overflow: hidden;
+		margin-top: -20px;
+	}
 
-    .is-overlapping-featured-image {
-        position: relative;
-        margin: 0 auto;
+	.is-overlapping-featured-image {
+		position: relative;
+		margin: 0 auto;
 
-        &::before {
-            content: "";
-            position: absolute;
-            left: -100vw;
-            right: -100vw;
-            bottom: 0;
-            height: 50%;
-            background-color: var(--wp--preset--color--base);
-        }
+		&::before {
+			content: "";
+			position: absolute;
+			left: -100vw;
+			right: -100vw;
+			bottom: 0;
+			height: 50%;
+			background-color: var(--wp--preset--color--base);
+		}
 
-        img {
-            position: relative;
-            z-index: 10;
-        }
-    }
+		img {
+			position: relative;
+			z-index: 10;
+		}
+	}
 }
 
 // Separate items with a |.
 .separate-children__with-pipe > *:not(:first-child)::before {
-    content: "|";
-    display: inline-block;
-    font-weight: 400;
-    margin: 0 0.5rem;
+	content: "|";
+	display: inline-block;
+	font-weight: 400;
+	margin: 0 0.5rem;
 }
 
 // Widths.
 .has-width-full {
-    width: 100%;
+	width: 100%;
+}
+
+// Upsells.
+.upsell-notification + .site-header {
+	margin-top: 0;
 }

@@ -74,3 +74,40 @@ table.wc-block-cart-items .wc-block-cart-items__header th,
 		color: var(--wp--preset--color--vivid-green-cyan);
 	}
 }
+
+.woocommerce .woocommerce-info {
+    border-top-color: var(--wp--preset--color--primary);
+
+	&::before {
+		color: var(--wp--preset--color--primary);
+	}
+}
+
+.woocommerce-account main.wp-block-group {
+	max-width: var(--wp--style--global--content-size);
+}
+
+// Custom account page styles.
+.woocommerce-account .hizzle__is-custom-woocommerce-account {
+
+	.woocommerce-MyAccount-navigation {
+		display: none;
+	}
+
+	.woocommerce-MyAccount-content {
+		float: none;
+		width: 100%;
+	}
+}
+
+.woocommerce-checkout .woocommerce #payment {
+    background: var(--wp--preset--color--extra-light);
+
+	div.payment_box {
+		background-color: var(--wp--preset--color--light);
+
+		&::before {
+			border-color: var(--wp--preset--color--light);
+		}
+	}
+}

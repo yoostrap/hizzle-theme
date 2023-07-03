@@ -29,7 +29,7 @@ function hizzle_setup() {
 	 * Load additional block styles.
 	 * See details on how to add more styles in the readme.txt.
 	 */
-	$styled_blocks = [ 'button', 'quote', 'navigation' ];
+	$styled_blocks = [ 'button', 'quote' ];
 	foreach ( $styled_blocks as $block_name ) {
 		$args = array(
 			'handle' => "hizzle-$block_name",
@@ -60,7 +60,7 @@ function hizzle_styles() {
 		$version
 	);
 
-	if ( function_exists( 'is_woocommerce' ) && is_woocommerce() ) {
+	if ( function_exists( 'is_woocommerce' ) && ( is_woocommerce() || is_cart() || is_checkout() || is_account_page() ) ) {
 		wp_enqueue_style(
 			'hizzle-woocommerce',
 			get_theme_file_uri( 'assets/css/woocommerce.css' ),

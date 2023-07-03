@@ -26,13 +26,18 @@
 					"name": "Light"
 				},
 				{
+					"slug": "extra-light",
+					"color": "#f9f9f9",
+					"name": "Extra Light"
+				},
+				{
 					"slug": "primary",
-					"color": "#6001ee",
+					"color": "#2874fc",
 					"name": "Primary"
 				},
 				{
 					"slug": "secondary",
-					"color": "#0d6efd",
+					"color": "#6002ee",
 					"name": "Secondary"
 				},
 				{
@@ -86,6 +91,11 @@
 					"slug": "hg-pink",
 					"gradient": "linear-gradient(to bottom right, #0100ec, #fb36f4)",
 					"name": "Blue pink"
+				},
+				{
+					"slug": "light-green",
+					"gradient": "linear-gradient(270deg,rgb(0,240,0) 0%,rgb(20,220,30) 50%,rgb(0,240,0) 100%)",
+					"name": "Light green"
 				}
 			],
 			"duotone": [
@@ -133,7 +143,7 @@
 		},
 		"layout": {
 			"contentSize": "720px",
-			"wideSize": "1020px"
+			"wideSize": "1200px"
 		},
 		"spacing": {
 			"units": [ "px", "em", "rem", "vh", "vw", "%" ]
@@ -348,8 +358,8 @@
 			"button": {
 				"border": {
 					"color": "var(--wp--preset--color--transparent)",
-					"width": "4px",
-					"style": "solid",
+					"width": "0",
+					"style": "none",
 					"radius": "4px"
 				},
 				"color": {
@@ -403,6 +413,11 @@
 		{
 			"name": "no-title",
 			"title": "No title",
+			"postTypes": [ "post","page" ]
+		},
+		{
+			"name": "no-title-with-upsell",
+			"title": "No title with upsell",
 			"postTypes": [ "post","page" ]
 		},
 		{

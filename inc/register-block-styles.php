@@ -40,10 +40,10 @@ function hizzle_register_block_styles() {
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
-		'core/navigation',
+		'core/navigation-link',
 		array(
-			'name'  => 'hizzle-navigation-button',
-			'label' => __( 'Button style', 'hizzle' ),
+			'name'  => 'hizzle-navigation-link-button',
+			'label' => __( 'Button', 'hizzle' ),
 		)
 	);
 
