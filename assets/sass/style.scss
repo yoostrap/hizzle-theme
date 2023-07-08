@@ -69,8 +69,8 @@ select {
 }
 
 // Checkbox and radio.
-input[type="checkbox"],
-input[type="radio"] {
+input[type="checkbox"]:not(.wc-block-components-checkbox__input),
+input[type="radio"]:not(.wc-block-components-checkbox__input) {
 
 	// Hide the default checkbox.
 	display: none;
@@ -116,7 +116,7 @@ input[type="radio"] {
 }
 
 // Radio.
-input[type="radio"] {
+input[type="radio"]:not(.wc-block-components-checkbox__input) {
 
 	// Create a custom radio style.
 	& + span::before,
