@@ -16,6 +16,7 @@
 		"@wordpress/stylelint-config": "^21.9.0",
 		"autoprefixer": "^10.4.14",
 		"dir-archiver": "^2.1.0",
+		"postcss-cli": "11.0.0",
 		"postcss": "^8.4.21",
 		"cssnano": "^6.0.1",
 		"rtlcss": "^4.0.0",
@@ -24,6 +25,7 @@
 	"scripts": {
 		"watch": "sass --watch assets/sass:assets/css",
 		"compile:css": "sass assets/sass:assets/css && postcss assets/css/style.css -o assets/css/style.css && postcss assets/css/woocommerce.css -o assets/css/woocommerce.css",
-		"compile:rtl": "rtlcss assets/css/style.css assets/css/style-rtl.css && rtlcss assets/css/woocommerce.css assets/css/woocommerce-rtl.css"
+		"compile:rtl": "rtlcss assets/css/style.css assets/css/style-rtl.css && rtlcss assets/css/woocommerce.css assets/css/woocommerce-rtl.css",
+		"build": "npm run compile:css && npm run compile:rtl"
 	}
 }
