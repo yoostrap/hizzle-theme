@@ -13,7 +13,7 @@
 	},
 	"require-dev": {
 		"szepeviktor/phpstan-wordpress": "^1.0.2",
-		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+		"dealerdirect/phpcodesniffer-composer-installer": "^1.0.0",
 		"wp-coding-standards/wpcs": "*",
 		"wptrt/wpthemereview": "^0.2.1"
 	},
