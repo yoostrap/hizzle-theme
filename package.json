@@ -12,7 +12,7 @@
 	"devDependencies": {
 		"@babel/core": "^7.20.12",
 		"@wordpress/babel-preset-default": "^7.10.0",
-		"@wordpress/eslint-plugin": "^13.10.0",
+		"@wordpress/eslint-plugin": "^17.0.0",
 		"@wordpress/stylelint-config": "^21.9.0",
 		"autoprefixer": "^10.4.14",
 		"dir-archiver": "^2.1.0",
