@@ -18,7 +18,7 @@
 		"dir-archiver": "^2.1.0",
 		"postcss-cli": "11.0.0",
 		"postcss": "^8.4.21",
-		"cssnano": "^6.0.1",
+		"cssnano": "^7.0.0",
 		"rtlcss": "^4.0.0",
 		"sass": "^1.59.2"
 	},
