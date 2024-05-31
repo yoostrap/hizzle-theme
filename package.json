@@ -11,9 +11,9 @@
 	"homepage": "https://hizzlewp.com/theme",
 	"devDependencies": {
 		"@babel/core": "^7.20.12",
-		"@wordpress/babel-preset-default": "^7.10.0",
-		"@wordpress/eslint-plugin": "^18.0.0",
-		"@wordpress/stylelint-config": "^21.9.0",
+		"@wordpress/babel-preset-default": "^8.0.0",
+		"@wordpress/eslint-plugin": "^19.0.0",
+		"@wordpress/stylelint-config": "^22.0.0",
 		"autoprefixer": "^10.4.14",
 		"dir-archiver": "^2.1.0",
 		"postcss-cli": "11.0.0",
