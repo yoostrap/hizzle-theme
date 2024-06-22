@@ -1,6 +1,6 @@
 === Hizzle ===
-Contributors: hizzlewp
-Tested up to: 6.2
+Contributors: hizzlewp, lewisushindi
+Tested up to: 6.5
 Requires at least: 6.1
 Requires PHP: 7.4
 Version: 1.0.0
